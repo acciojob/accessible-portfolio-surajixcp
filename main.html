@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <h1 role="heading">My Accessible Portfolio</h1>
+
+    <nav role="navigation">
+        <ul>
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <img src="profile.jpg" alt="A portrait of the portfolio owner" role="img">
+
+    <section id="about">
+        <h2 role="heading">About Me</h2>
+        <p>Welcome to my portfolio! I am a software developer with over 15 years of experience in creating accessible web applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web App</li>
+            <li role="listitem">Project 2: ARIA Roles Implementation</li>
+            <li role="listitem">Project 3: Responsive Design Techniques</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 role="heading">Contact Me</h2>
+        <p>If you would like to get in touch, please reach out via email at example@example.com.</p>
+    </section>
 
 </body>
-
 </html>
